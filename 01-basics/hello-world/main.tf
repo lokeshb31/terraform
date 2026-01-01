@@ -4,7 +4,8 @@ terraform {
 
 provider "local" {}
 
-resource "local_file" "hello" {
-  filename = var.filename
-  content  = var.content
+module "vpc" { ... }
+module "compute" {
+  vpc_id = module.vpc.id
 }
+

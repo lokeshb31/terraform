@@ -1,0 +1,1 @@
+content = "Terraform practice with count and outputs"

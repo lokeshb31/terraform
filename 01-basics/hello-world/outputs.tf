@@ -1,3 +1,3 @@
-output "file_name" {
-  value = local_file.hello.filename
+output "compute_output" {
+  value = module.compute.compute_file
 }
